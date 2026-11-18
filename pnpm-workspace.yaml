@@ -2,3 +2,9 @@ packages:
   - "apps/*"
   - "packages/*"
   - "examples/*"
+
+# pnpm >= 12 reads dependency settings here, not from package.json "pnpm".
+# esbuild ships a platform binary via a postinstall script; without approval,
+# `pnpm install --frozen-lockfile` exits with ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  esbuild: true
