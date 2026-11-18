@@ -1,0 +1,11 @@
+node_modules
+dist
+.turbo
+.next
+artifacts
+# generated from content/source by tools/build-pack
+packages/id/messages
+packages/id/i18next
+packages/id/src/generated
+# copied from the root LICENSE by tools/release/prepack.mjs before packing
+packages/*/LICENSE

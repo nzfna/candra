@@ -1,0 +1,32 @@
+{
+  "generic": {
+    "unknown": "Terjadi kesalahan. Silakan coba lagi.",
+    "tryLater": "Terjadi kesalahan. Silakan coba lagi nanti."
+  },
+  "network": {
+    "offline": "Tidak ada koneksi internet. Periksa jaringan Anda, lalu coba lagi.",
+    "timeout": "Permintaan memakan waktu terlalu lama. Silakan coba lagi."
+  },
+  "http": {
+    "badRequest": "Permintaan tidak valid",
+    "unauthorized": "Anda perlu masuk untuk mengakses halaman ini",
+    "forbidden": "Anda tidak memiliki akses ke halaman ini",
+    "notFound": "Halaman tidak ditemukan",
+    "conflict": "Terjadi konflik data. Muat ulang halaman, lalu coba lagi.",
+    "tooManyRequests": "Terlalu banyak permintaan. Coba lagi beberapa saat lagi.",
+    "serverError": "Terjadi gangguan pada server kami. Silakan coba lagi nanti.",
+    "unavailable": "Layanan sedang tidak tersedia. Silakan coba lagi nanti."
+  },
+  "permission": {
+    "denied": "Anda tidak memiliki izin untuk melakukan tindakan ini"
+  },
+  "notFoundPage": {
+    "title": "Halaman tidak ditemukan",
+    "body": "Halaman yang Anda cari mungkin telah dipindahkan atau dihapus.",
+    "backHome": "Kembali ke beranda"
+  },
+  "maintenance": {
+    "title": "Sedang dalam pemeliharaan",
+    "body": "Kami sedang melakukan pemeliharaan. Silakan kembali beberapa saat lagi."
+  }
+}

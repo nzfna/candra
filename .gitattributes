@@ -1,0 +1,2 @@
+# Keep the published pack byte-identical across Windows, macOS and Linux checkouts.
+* text=auto eol=lf

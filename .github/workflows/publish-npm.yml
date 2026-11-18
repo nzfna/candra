@@ -1,0 +1,42 @@
+name: Publish to npm
+# Opsi B (target akhir). Sengaja hanya bisa dijalankan manual dari tab Actions.
+# Prasyarat sebelum dipakai:
+#   1. Isi field `repository` di packages/id/package.json dan packages/core/package.json.
+#   2. Pastikan scope `@candra` sudah kamu miliki di npm, atau ganti nama scope-nya.
+#   3. Set Trusted Publisher di npmjs.com untuk workflow ini (atau simpan secret NPM_TOKEN).
+#   4. Buat environment `npm` di GitHub dengan reviewer wajib.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Hanya npm publish --dry-run (tidak benar-benar terbit)"
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  id-token: write # provenance / trusted publishing
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: npm
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm content:lint:release
+      - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm test
+      - if: inputs.dry_run
+        run: pnpm -r publish --access public --no-git-checks --dry-run
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - if: ${{ !inputs.dry_run }}
+        run: pnpm -r publish --access public --no-git-checks --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

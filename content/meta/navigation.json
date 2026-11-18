@@ -1,0 +1,22 @@
+{
+  "menu.home": "draft",
+  "menu.about": "draft",
+  "menu.products": "draft",
+  "menu.pricing": "draft",
+  "menu.blog": "draft",
+  "menu.contact": "draft",
+  "menu.help": "draft",
+  "menu.docs": "draft",
+  "account.profile": "draft",
+  "account.settings": "draft",
+  "account.orders": "draft",
+  "account.notifications": "draft",
+  "footer.privacy": "draft",
+  "footer.terms": "draft",
+  "footer.copyright": "draft",
+  "a11y.skipToContent": "draft",
+  "a11y.openMenu": "draft",
+  "a11y.closeMenu": "draft",
+  "a11y.breadcrumb": "draft",
+  "a11y.language": "draft"
+}

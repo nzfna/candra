@@ -1,0 +1,22 @@
+{
+  "required": "Kolom ini wajib diisi",
+  "requiredField": "{field} wajib diisi",
+  "minLength": "Minimal {min} karakter",
+  "maxLength": "Maksimal {max} karakter",
+  "min": "Nilai minimal {min}",
+  "max": "Nilai maksimal {max}",
+  "email": { "invalid": "Format email tidak valid" },
+  "url": { "invalid": "Format tautan tidak valid" },
+  "number": { "invalid": "Masukkan angka yang valid", "integer": "Masukkan bilangan bulat" },
+  "password": {
+    "tooShort": "Kata sandi minimal {min} karakter",
+    "mismatch": "Kata sandi tidak cocok",
+    "weak": "Kata sandi terlalu lemah"
+  },
+  "phone": { "invalid": "Nomor telepon tidak valid" },
+  "nik": { "invalid": "NIK harus terdiri dari 16 digit" },
+  "npwp": { "invalid": "Format NPWP tidak valid" },
+  "postalCode": { "invalid": "Kode pos harus terdiri dari 5 digit" },
+  "date": { "invalid": "Tanggal tidak valid", "past": "Tanggal harus sebelum hari ini", "future": "Tanggal harus setelah hari ini" },
+  "file": { "tooLarge": "Ukuran berkas maksimal {max}", "invalidType": "Jenis berkas tidak didukung" }
+}

@@ -1,0 +1,39 @@
+{
+  "actions": {
+    "save": "Simpan", "cancel": "Batal", "delete": "Hapus", "edit": "Ubah", "add": "Tambah",
+    "close": "Tutup", "confirm": "Konfirmasi", "back": "Kembali", "next": "Lanjut",
+    "previous": "Sebelumnya", "submit": "Kirim", "search": "Cari", "filter": "Saring",
+    "reset": "Atur ulang", "apply": "Terapkan", "copy": "Salin", "download": "Unduh",
+    "upload": "Unggah", "retry": "Coba lagi", "refresh": "Muat ulang", "viewAll": "Lihat semua",
+    "learnMore": "Pelajari selengkapnya", "done": "Selesai", "share": "Bagikan"
+  },
+  "states": {
+    "loading": "Memuat…", "saving": "Menyimpan…", "processing": "Memproses…",
+    "saved": "Tersimpan", "success": "Berhasil", "failed": "Gagal"
+  },
+  "empty": {
+    "noData": "Belum ada data",
+    "noResults": "Tidak ada hasil yang ditemukan",
+    "noResultsFor": "Tidak ada hasil untuk “{query}”",
+    "tryAnother": "Coba gunakan kata kunci yang lain"
+  },
+  "confirm": {
+    "deleteTitle": "Hapus item ini?",
+    "deleteBody": "Tindakan ini tidak dapat dibatalkan.",
+    "unsavedTitle": "Perubahan belum disimpan",
+    "unsavedBody": "Jika Anda meninggalkan halaman ini, perubahan akan hilang.",
+    "yes": "Ya", "no": "Tidak"
+  },
+  "pagination": {
+    "page": "Halaman {page} dari {total}",
+    "range": "Menampilkan {from}–{to} dari {total}",
+    "perPage": "Per halaman"
+  },
+  "time": {
+    "today": "Hari ini", "yesterday": "Kemarin", "tomorrow": "Besok", "justNow": "Baru saja"
+  },
+  "labels": {
+    "optional": "Opsional", "required": "Wajib diisi", "all": "Semua",
+    "none": "Tidak ada", "other": "Lainnya", "status": "Status", "name": "Nama", "date": "Tanggal"
+  }
+}

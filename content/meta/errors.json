@@ -1,0 +1,20 @@
+{
+  "generic.unknown": "draft",
+  "generic.tryLater": "draft",
+  "network.offline": "draft",
+  "network.timeout": "draft",
+  "http.badRequest": "draft",
+  "http.unauthorized": "draft",
+  "http.forbidden": "draft",
+  "http.notFound": "draft",
+  "http.conflict": "draft",
+  "http.tooManyRequests": "draft",
+  "http.serverError": "draft",
+  "http.unavailable": "draft",
+  "permission.denied": "draft",
+  "notFoundPage.title": "draft",
+  "notFoundPage.body": "draft",
+  "notFoundPage.backHome": "draft",
+  "maintenance.title": "draft",
+  "maintenance.body": "draft"
+}

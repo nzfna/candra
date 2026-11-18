@@ -1,0 +1,30 @@
+name: Release
+# Opsi A: tag `v*` → build tarball → lampirkan ke GitHub Release (tanpa akun npm).
+# Konsumen memasang:
+#   pnpm add https://github.com/<owner>/<repo>/releases/download/v0.1.0/candra-id-0.1.0.tgz
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+jobs:
+  tarballs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      # Ganti ke `pnpm content:lint:release` setelah semua kunci berstatus `approved`.
+      - run: pnpm content:lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm release:pack
+        env:
+          RELEASE_URL_BASE: https://github.com/${{ github.repository }}/releases/download
+      - run: pnpm release:smoke
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*.tgz
+          generate_release_notes: true

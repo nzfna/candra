@@ -1,0 +1,55 @@
+{
+  "catalog": {
+    "title": "Produk", "category": "Kategori", "brand": "Merek", "price": "Harga",
+    "sort": {
+      "label": "Urutkan", "relevance": "Paling sesuai", "priceLow": "Harga terendah",
+      "priceHigh": "Harga tertinggi", "newest": "Terbaru", "popular": "Terlaris"
+    },
+    "inStock": "Stok tersedia", "outOfStock": "Stok habis", "lowStock": "Tersisa {count} lagi",
+    "addToCart": "Tambah ke keranjang", "buyNow": "Beli sekarang",
+    "addToWishlist": "Simpan ke favorit", "removeFromWishlist": "Hapus dari favorit"
+  },
+  "cart": {
+    "title": "Keranjang belanja", "empty": "Keranjang Anda masih kosong",
+    "emptyHint": "Mulai belanja untuk menambahkan produk ke keranjang.",
+    "itemCount": "{count} produk", "subtotal": "Subtotal", "quantity": "Jumlah",
+    "remove": "Hapus dari keranjang", "coupon": "Kode kupon", "applyCoupon": "Pakai kupon",
+    "couponInvalid": "Kode kupon tidak valid atau sudah kedaluwarsa", "checkout": "Lanjut ke pembayaran"
+  },
+  "checkout": {
+    "title": "Pembayaran", "shippingAddress": "Alamat pengiriman",
+    "recipientName": "Nama penerima", "phone": "Nomor telepon", "province": "Provinsi",
+    "city": "Kabupaten/Kota", "district": "Kecamatan", "village": "Kelurahan/Desa",
+    "rtRw": "RT/RW", "postalCode": "Kode pos", "addressDetail": "Alamat lengkap",
+    "addressNote": "Patokan alamat", "shippingMethod": "Metode pengiriman", "courier": "Kurir",
+    "shippingCost": "Ongkos kirim", "estimate": "Estimasi tiba {date}",
+    "paymentMethod": "Metode pembayaran", "orderSummary": "Ringkasan pesanan",
+    "discount": "Diskon", "tax": "Pajak", "total": "Total", "placeOrder": "Buat pesanan"
+  },
+  "payment": {
+    "methods": {
+      "bankTransfer": "Transfer bank", "virtualAccount": "Virtual account",
+      "ewallet": "Dompet digital", "qris": "QRIS", "cod": "Bayar di tempat (COD)",
+      "card": "Kartu kredit/debit", "installment": "Cicilan"
+    },
+    "payBefore": "Bayar sebelum {time}",
+    "status": {
+      "pending": "Menunggu pembayaran", "paid": "Sudah dibayar",
+      "expired": "Kedaluwarsa", "failed": "Pembayaran gagal"
+    }
+  },
+  "order": {
+    "title": "Pesanan", "number": "Nomor pesanan", "trackingNumber": "Nomor resi",
+    "track": "Lacak paket", "cancel": "Batalkan pesanan", "reorder": "Beli lagi",
+    "empty": "Anda belum memiliki pesanan",
+    "status": {
+      "awaitingPayment": "Menunggu pembayaran", "processing": "Diproses", "shipped": "Dikirim",
+      "delivered": "Tiba di tujuan", "completed": "Selesai", "cancelled": "Dibatalkan"
+    }
+  },
+  "returns": { "request": "Ajukan pengembalian", "reason": "Alasan pengembalian" },
+  "reviews": {
+    "title": "Ulasan", "write": "Tulis ulasan", "rating": "Penilaian",
+    "count": "{count} ulasan", "average": "Rata-rata {rating} dari 5"
+  }
+}

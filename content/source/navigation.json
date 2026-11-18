@@ -1,0 +1,17 @@
+{
+  "menu": {
+    "home": "Beranda", "about": "Tentang kami", "products": "Produk", "pricing": "Harga",
+    "blog": "Blog", "contact": "Hubungi kami", "help": "Bantuan", "docs": "Dokumentasi"
+  },
+  "account": {
+    "profile": "Profil", "settings": "Pengaturan", "orders": "Pesanan saya", "notifications": "Notifikasi"
+  },
+  "footer": {
+    "privacy": "Kebijakan Privasi", "terms": "Syarat dan Ketentuan",
+    "copyright": "© {year} {company}. Hak cipta dilindungi."
+  },
+  "a11y": {
+    "skipToContent": "Lewati ke konten utama", "openMenu": "Buka menu", "closeMenu": "Tutup menu",
+    "breadcrumb": "Jalur navigasi", "language": "Bahasa"
+  }
+}
