@@ -44,8 +44,8 @@ Pushing a `v*` tag runs `.github/workflows/release.yml`, which verifies, packs a
 tarballs to the Release. Consumers install straight from the release URL:
 
 ```bash
-pnpm add https://github.com/<owner>/<repo>/releases/download/v0.1.0/candra-id-0.1.0.tgz
-pnpm add https://github.com/<owner>/<repo>/releases/download/v0.1.0/candra-core-0.1.0.tgz
+pnpm add https://github.com/nzfna/candra/releases/download/v0.1.0/candra-id-0.1.0.tgz
+pnpm add https://github.com/nzfna/candra/releases/download/v0.1.0/candra-core-0.1.0.tgz
 ```
 
 `SHA256SUMS.txt` lets consumers pin the downloaded files by digest.
